@@ -1,6 +1,7 @@
 #pragma once
 #include "Player.h" 
 #include "Score.h"
+#include "Gameplay.h"
 
 #include <string.h>
 

@@ -8,9 +8,12 @@ int main()
     const int heightBack = 700;
     const int widthBack = 700;
 
-    RenderWindow window(sf::VideoMode(widthBack, heightBack), "SFML works!"); 
+    RenderWindow window(VideoMode(widthBack, heightBack), "Doodle jump!"); //Создание окна
+    Image icon; //Установка иконки для окна
+    icon.loadFromFile("Image/icon.png");
+    window.setIcon(33, 32, icon.getPixelsPtr());
 
-    Player player(200, 500, "Image/pers.png");
+    Player player(200, 500, "Image/pers.png"); //Идентифицируем классы персонажа, платформу и счёт
     Platforms platforms(200, 600, "Image/platformMin.png");
     Score score;
     Clock clock;
@@ -24,7 +27,7 @@ int main()
         Event event;
         while (window.pollEvent(event))
         {
-            if (event.type == sf::Event::Closed || Keyboard::isKeyPressed(Keyboard::Escape)) //Закрытие окна
+            if (event.type == Event::Closed || Keyboard::isKeyPressed(Keyboard::Escape)) //Закрытие окна
                 window.close();
         }
 

@@ -34,8 +34,8 @@ void Platforms::update(Player& player, RenderWindow& window, Score& score) {
         }
 
         //Поражение 
-        if (player.y > platforms.front().y + 400) {
-            window.close();
+        if (player.y > platforms.front().y + 250) {
+            loser(window, player, score);
         }
 
         window.draw(sprite);
