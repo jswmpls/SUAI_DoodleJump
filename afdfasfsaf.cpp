@@ -13,9 +13,9 @@ int main()
     icon.loadFromFile("Image/icon.png");
     window.setIcon(33, 32, icon.getPixelsPtr());
 
-    Player player(200, 500, "Image/pers.png"); //Идентифицируем классы персонажа, платформу и счёт
-    Platforms platforms(200, 600, "Image/platformMin.png");
-    Score score;
+    Player player(200, 500, "Image/pers.png"); //Идентифицируем класс Player
+    Platforms platforms(200, 600, "Image/platformMin.png"); //Идентифицируем класс Platforms
+    Score score; //Идентифицируем класс Score
     Clock clock;
 
     while (window.isOpen())

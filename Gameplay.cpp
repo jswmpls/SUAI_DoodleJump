@@ -13,7 +13,7 @@ void loser(RenderWindow& window, Player& player, Score& score)
 	control.setFont(font);
 	control.setCharacterSize(26);
 	control.setFillColor(sf::Color::Black);
-	control.setString("Control: \n ESC - exit \n R - restart");
+	control.setString("Control: \n ESC - exit");
 
 	Texture dopLoseTexture;
 	dopLoseTexture.loadFromFile("Image/fonReplay.png");

@@ -21,7 +21,7 @@ public:
 
 	float gravity = 0.35f;
 
-	Player(float startX, float startY, const string& textureFile) : x(startX), y(startY), canJump(false), speed(0.7f), jumpHeight(400.0f), jumpSpeed (0.7f){
+	Player(float startX, float startY, const string& textureFile) : x(startX), y(startY), canJump(false), speed(0.7f), jumpHeight(300.0f), jumpSpeed (0.7f){
 		texture.loadFromFile(textureFile);
 		sprite.setTexture(texture);
 		sprite.setPosition(startX, startY);

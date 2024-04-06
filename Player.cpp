@@ -16,13 +16,13 @@ void Player::move(float time)
     }
 
     if (canJump) {
-        y -= (jumpSpeed * time);
-        jumpHeight -= speed;
+        y -= (jumpSpeed * time); 
+        jumpHeight -= speed; 
 
         if (jumpHeight <= 0) {
             canJump = false;
             jumpSpeed = 0.7f;
-            jumpHeight = 400.0f;
+            jumpHeight = 300.0f;
         }
     }
 
