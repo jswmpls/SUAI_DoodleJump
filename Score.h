@@ -24,8 +24,8 @@ public:
         scoreText.setString("Score: " + std::to_string(score));
     }
 
-    void updateScore();
-    void saveRecordToFile();
-    void updateRecord();
-    int getRecord();
+    void updateScore(); //Обновление счёта
+    void saveRecordToFile(); //Сохранение рекорда в файл
+    void updateRecord(); //Обновление рекорда 
+    int getRecord(); //Вывод рекорда 
 };

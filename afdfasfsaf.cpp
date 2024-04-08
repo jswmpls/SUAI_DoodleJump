@@ -32,17 +32,12 @@ int main()
         }
 
         window.setView(View(FloatRect(0, player.y - heightBack / 2, widthBack, heightBack))); //Камера
-
         window.clear(Color::Cyan); //Фон
-
         player.move(time); //Движения персонажа 
         window.draw(player.sprite); //Персонаж 
-
         platforms.update(player, window, score); //Платформы 
-
         window.draw(score.scoreText); // Счёт
         score.scoreText.setPosition(10, player.y - 350);
-
         window.display();
     }
 

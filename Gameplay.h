@@ -6,4 +6,5 @@
 
 #include <SFML/Graphics.hpp>
 
+//Вызывается при поржении 
 void loser(RenderWindow& window, Player& player, Score& score);

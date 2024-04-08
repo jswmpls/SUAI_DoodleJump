@@ -2,6 +2,7 @@
 
 void Player::move(float time)
 {
+    //Перемещение персонажа влево/вправо при нажатии клавиш 
     if (Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A)) {
         if (x <= 5)
             x = windowWidth - 5;
@@ -15,6 +16,7 @@ void Player::move(float time)
             x += (speed * time);
     }
 
+    //Прыжок при коллизии с платформой
     if (canJump) {
         y -= (jumpSpeed * time);
         jumpHeight -= (jumpSpeed * time);
@@ -25,6 +27,7 @@ void Player::move(float time)
         }
     }
 
+    //Гравитация
     y += (gravity * time);
 
     sprite.setPosition(x, y);

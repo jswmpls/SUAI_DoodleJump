@@ -28,6 +28,7 @@ public:
         platform.y = 630;
         platforms.push_back(platform);
 
+        //Спавн начальных плафторм 
         for (int i = 0; i < 20; i++) {
             platform.x = rand() % windowWidth;
             platform.y = 700 - (700 / 10) * i + 60;
@@ -35,5 +36,6 @@ public:
         }
     }
 
+    //Обновление платформ
     void update(Player& player, RenderWindow& window, Score& score); 
 };

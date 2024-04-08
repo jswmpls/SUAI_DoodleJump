@@ -28,5 +28,6 @@ public:
 		sprite.setPosition(startX, startY);
 	}
 
+	//Движение персонажа
 	void move(float time);
 };
