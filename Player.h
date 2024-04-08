@@ -15,13 +15,14 @@ public:
 	Sprite sprite; 
 	float x, y;
 	bool canJump = false;
+	float tempJump = 0;
 	float speed;
-	float jumpSpeed;
+	const float jumpSpeed;
 	float jumpHeight;
 
-	float gravity = 0.35f;
+	float gravity = 0.3f;
 
-	Player(float startX, float startY, const string& textureFile) : x(startX), y(startY), canJump(false), speed(0.7f), jumpHeight(300.0f), jumpSpeed (0.7f){
+	Player(float startX, float startY, const string& textureFile) : x(startX), y(startY), canJump(false), speed(0.6f), jumpHeight(330.0f), jumpSpeed (0.7f){
 		texture.loadFromFile(textureFile);
 		sprite.setTexture(texture);
 		sprite.setPosition(startX, startY);

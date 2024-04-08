@@ -35,6 +35,7 @@ void Platforms::update(Player& player, RenderWindow& window, Score& score) {
 
         //Поражение 
         if (player.y > platforms.front().y + 250) {
+            score.updateRecord();
             loser(window, player, score);
         }
 

@@ -1,5 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp> 
+#include <fstream>
+
 #include "PLayer.h" 
 using namespace sf;
 using namespace std;
@@ -7,6 +9,8 @@ using namespace std;
 class Score {
 public:
     int score;
+    int record;
+    ofstream fileScore;
     Font font;
     Text scoreText;
 
@@ -21,4 +25,7 @@ public:
     }
 
     void updateScore();
+    void saveRecordToFile();
+    void updateRecord();
+    int getRecord();
 };
