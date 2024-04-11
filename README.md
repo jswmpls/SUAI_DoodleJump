@@ -23,7 +23,7 @@ https://github.com/jswmpls/SUAI_DoodleJump/assets/162914714/99b8be28-e850-4704-9
 ## Технологическое описание
 ### Как запустить?
 1. Убедитесь, что у вас установлена библиотека SFML. 
-2. Подключите SFML.[Подключение SFML С++](https://www.youtube.com/watch?v=odTop02dz0o)
+2. Подключите SFML. ([Подключение SFML С++](https://www.youtube.com/watch?v=odTop02dz0o))
 3. Запустите скомпилированный исполняемый файл.
    
 ### Управление в игре
