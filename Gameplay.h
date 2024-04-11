@@ -8,5 +8,3 @@
 
 //Вызывается при поржении 
 void loser(RenderWindow& window, Player& player, Score& score);
-
-void playing(RenderWindow& window, Player& player, Score& score, Platforms& platforms);
